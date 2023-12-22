@@ -1,0 +1,192 @@
+.hlavicka {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: #EEE7C2;
+    color: #5E2751;
+    font-family: "halyard-display";
+    font-weight: bold;
+}
+
+.zahlavi {
+    background-image: url(../img/web-zus-tisnov-podklady/background-dlazdice-1.jpg), url(../img/web-zus-tisnov-podklady/background-dlazdice-opakovacka.jpg);
+    background-size: 100%, 100%;
+    background-repeat: no-repeat, repeat;
+    height: 2760px;
+    margin-top: -50px;
+    /* opacity: 0.3; */
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #EEE7C2;
+}
+
+p.a {
+    font-size: 91px;
+    margin-top: -60px;
+}
+
+p.b {
+    font-size: 55px;
+    margin-top: -50px;
+}
+
+.butt {
+    position: relative;
+    width: 215px;
+    height: 255px;
+    border-top-right-radius: 40px;
+    margin: 15px;
+}
+
+/* .butt-otevreno:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 120%;
+    padding-left: 100%;
+    border-top-right-radius: 40px;
+    margin-top: -100%;
+    opacity: 0;
+    transition: all 0.8s;
+    bottom: 0;
+    left: 0;
+} */
+
+.butt_active{
+    border: solid #5E2751;
+    color: #EEE7C2;
+    cursor: pointer;
+}
+
+.butt-otevreno:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.butt-zavreno {
+    border: dashed;
+    background-color: #00A97C;
+    color: #5E2751;
+}
+
+.butt-otevreno {
+    border: solid #00A97C;
+    color: #EEE7C2;
+}
+
+.play {
+    width: 80px;
+    border: #5E2751;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 45px;
+
+}
+
+.mesic {
+    position: absolute;
+    left: 20px;
+    bottom: -10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: halyard-display-book;
+
+}
+
+.cislo {
+    position: absolute;
+    left: 10px;
+    top: -110px;
+    width: 50px;
+    height: 50px;
+    font-size: 98px;
+    font-weight: bold;
+    font-family: halyard-display-medium;
+
+}
+
+.bor_dlazdice {
+    position: relative;
+    margin: -2650px auto;
+    width: 735px;
+
+}
+
+.nastroj {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    width: 180px;
+    height: 180px;
+}
+
+@media(max-width: 800px) {
+
+
+    .nastroj {
+        width: 160px;
+        height: 160px;
+        top: 20px;
+    }
+
+    .mesic {
+        bottom: -10px;
+        font-size: 20px;
+
+    }
+
+    .play{
+        bottom: 25px;
+    }
+
+    .butt {
+        width: 150px;
+        height: 200px;
+    }
+
+    .bor_dlazdice {
+        margin: -2750px auto;
+        ;
+        width: 360px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    p.b {
+        margin-top: 5px;
+        font-size: 51px;
+    }
+
+    .cislo {
+        left: 0;
+        top: -60px;
+        font-size: 60px;
+    }
+}
+
+ @media(min-width: 2000px) {
+    .butt {
+        width: 350px;
+        margin-top: 0px;
+    }
+
+    .bor_dlazdice {
+        width: 1140px;    
+    }
+} 
+
+/* @media(min-width: 800px) and (max-width: 1999px) {
+    .bor_dlazdice {
+        width: 1140px;    
+    }
+}  */
